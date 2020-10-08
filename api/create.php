@@ -13,8 +13,7 @@
     $data = json_decode(file_get_contents("php://input"));
     
     
-    $id = $data->id;
-    $customAttribute = $data->customAttribute;
+    $name = $data->name;
 
-    $db->update_record($id, $customAttribute);
+    $db->add_record($name);
 ?>
